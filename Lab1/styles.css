@@ -1,0 +1,163 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1E1F22;
+    color: #DFE1E5;
+    margin: 0;
+    padding: 0;
+}
+
+.header-wrapper {
+    background-color: #2c3e50;
+    padding: 10px 0;
+}
+
+.top-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-navigation ul li {
+    margin-right: 20px;
+}
+
+.top-navigation ul li a {
+    color: #DFE1E5;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.top-navigation ul li a:hover {
+    color: #3498db;
+}
+
+.top-navigation-image img {
+    height: 40px;
+    background: #DFE1E5;
+    border-radius: 5px;
+}
+
+.top-navigation-search {
+    display: flex;
+}
+
+.top-navigation-search input {
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+    width: 20rem;
+}
+
+#search-button {
+    padding: 5px;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.top-navigation-auth a {
+    color: #ecf0f1;
+    margin-left: 20px;
+}
+
+.login-button:hover, .register-button:hover {
+    color: #3498db;
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+aside {
+    width: 260px;
+    padding: 20px;
+    background-color: #2B2D30;
+}
+
+aside h2 {
+    color: #ecf0f1;
+}
+
+main {
+    width: 100%;
+    margin-inline: 3rem;
+}
+
+.grid-sections {
+    margin-top: 3rem;
+}
+
+.best_on_week, .hurry_up_reg, .popular_artists {
+    background-color: #2c3e50;
+    padding: 2px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.18)
+}
+
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 3rem auto;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.22)
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button[name="prev"] {
+    left: 20px;
+}
+
+button[name="next"] {
+    right: 20px;
+}
