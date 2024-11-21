@@ -1,0 +1,76 @@
+@media (max-width: 510px) {
+    .slider {
+        display: none;
+    }
+}
+
+.grid-sections {
+    margin-top: 3rem;
+}
+
+.best_on_week, .hurry_up_reg, .popular_artists {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.18)
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 3rem auto;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.22)
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button[name="prev"] {
+    left: 20px;
+}
+
+button[name="next"] {
+    right: 20px;
+}
+
+.table-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.table-header, .table-row {
+    display: contents;
+}
+
+.table-cell {
+    padding: 8px;
+    text-align: left;
+    background-color: #2c3e50;
+    color: #DFE1E5;
+}
+
+.table-header .table-cell {
+    font-weight: bold;
+    color: #fff;
+}
+
+.table-row:nth-child(2n) .table-cell {
+    background-color: #34495e;
+}
+
+
