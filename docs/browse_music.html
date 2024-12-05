@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TuneRally</title>
     <link rel="stylesheet" href="styles/style_base.css">
+    <link rel="stylesheet" href="styles/style_browse_music.css">
     <script src="scripts/main.js"></script>
 </head>
 <body>
@@ -51,7 +52,18 @@
             </aside>
             <main>
                 <div class="page-title">
-                    <h2>Browse Music Page</h2>
+                    <h2>Добавьте любимые треки!</h2>
+                    <form id="table-form">
+                        <label for="track-name">Название трека:</label>
+                        <input type="text" id="track-name" class="table-input" required>
+                        <label for="track-genre">Жанр:</label>
+                        <input type="text" id="track-genre" class="table-input" required>
+                        <label for="track-rating">Рейтинг:</label>
+                        <input type="number" id="track-rating" class="table-input" step="0.1" min="0" max="5" required>
+                        <button type="submit" id="submit-button">Добавить трек</button>
+                    </form>
+                    <div id="table-container" class="table-wrapper"></div>
+                    <script src="scripts/track-table.js"></script>
                 </div>
             </main>
         </div>

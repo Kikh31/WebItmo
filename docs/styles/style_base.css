@@ -181,3 +181,27 @@ a:hover {
     text-decoration: underline;
 }
 
+.table-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.table-header, .table-row {
+    display: contents;
+}
+
+.table-cell {
+    padding: 8px;
+    text-align: left;
+    background-color: #2c3e50;
+    color: #DFE1E5;
+}
+
+.table-header .table-cell {
+    font-weight: bold;
+    color: #fff;
+}
+
+.table-row:nth-child(2n) .table-cell {
+    background-color: #34495e;
+}
