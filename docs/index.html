@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="styles/style_index.css">
     <script src="scripts/main.js"></script>
     <script src="scripts/table-content-load.js" defer></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
 <div id="root">
@@ -57,13 +63,35 @@
                 </section>
             </aside>
             <main>
-                <div class="slider">
-                    <div class="slides">
-                        <img src="res/sliderimg1.png" alt="slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="res/img1.gif" alt="img1"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="res/img2.gif" alt="img2"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="res/img3.gif" alt="img3"/>
+                        </div>
                     </div>
-                    <button name="prev" class="slider-button">←</button>
-                    <button name="next" class="slider-button">→</button>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+                <script>
+                    const swiper = new Swiper('.swiper', {
+                        direction: 'horizontal',
+                        loop: true,
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        }
+                    });
+                </script>
                 <div class="grid-sections">
                     <section class="best_on_week">
                         <h2>Best of the week</h2>
@@ -75,30 +103,30 @@
                                     <div class="table-cell">Жанр</div>
                                     <div class="table-cell">Рейтинг</div>
                                 </div>
-<!--                                <div class="table-row">-->
-<!--                                    <div class="table-cell">1</div>-->
-<!--                                    <div class="table-cell">Трек 1</div>-->
-<!--                                    <div class="table-cell">Рок</div>-->
-<!--                                    <div class="table-cell">5.0</div>-->
-<!--                                </div>-->
-<!--                                <div class="table-row">-->
-<!--                                    <div class="table-cell">2</div>-->
-<!--                                    <div class="table-cell">Трек 2</div>-->
-<!--                                    <div class="table-cell">Поп</div>-->
-<!--                                    <div class="table-cell">4.8</div>-->
-<!--                                </div>-->
-<!--                                <div class="table-row">-->
-<!--                                    <div class="table-cell">3</div>-->
-<!--                                    <div class="table-cell">Трек 3</div>-->
-<!--                                    <div class="table-cell">Хип-хоп</div>-->
-<!--                                    <div class="table-cell">4.5</div>-->
-<!--                                </div>-->
-<!--                                <div class="table-row">-->
-<!--                                    <div class="table-cell">4</div>-->
-<!--                                    <div class="table-cell">Трек 4</div>-->
-<!--                                    <div class="table-cell">Панк</div>-->
-<!--                                    <div class="table-cell">4.4</div>-->
-<!--                                </div>-->
+                                <!--                                <div class="table-row">-->
+                                <!--                                    <div class="table-cell">1</div>-->
+                                <!--                                    <div class="table-cell">Трек 1</div>-->
+                                <!--                                    <div class="table-cell">Рок</div>-->
+                                <!--                                    <div class="table-cell">5.0</div>-->
+                                <!--                                </div>-->
+                                <!--                                <div class="table-row">-->
+                                <!--                                    <div class="table-cell">2</div>-->
+                                <!--                                    <div class="table-cell">Трек 2</div>-->
+                                <!--                                    <div class="table-cell">Поп</div>-->
+                                <!--                                    <div class="table-cell">4.8</div>-->
+                                <!--                                </div>-->
+                                <!--                                <div class="table-row">-->
+                                <!--                                    <div class="table-cell">3</div>-->
+                                <!--                                    <div class="table-cell">Трек 3</div>-->
+                                <!--                                    <div class="table-cell">Хип-хоп</div>-->
+                                <!--                                    <div class="table-cell">4.5</div>-->
+                                <!--                                </div>-->
+                                <!--                                <div class="table-row">-->
+                                <!--                                    <div class="table-cell">4</div>-->
+                                <!--                                    <div class="table-cell">Трек 4</div>-->
+                                <!--                                    <div class="table-cell">Панк</div>-->
+                                <!--                                    <div class="table-cell">4.4</div>-->
+                                <!--                                </div>-->
                             </div>
                         </div>
                     </section>
